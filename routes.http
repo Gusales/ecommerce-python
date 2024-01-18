@@ -11,3 +11,6 @@ Content-Type: application/json
   "price": 2000,
   "description": "SmartTV Samsung 4k 65 polegadas"
 }
+###
+# @name DELETE_PRODUCT
+DELETE http://127.0.0.1:5000/api/products/delete/1
