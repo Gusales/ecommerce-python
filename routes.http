@@ -1,1 +1,13 @@
-GET http://127.0.0.1:5000/teste
+# @name HELLO_WORLD
+GET http://127.0.0.1:5000/
+
+###
+# @name ADD_NEW_PRODUCT
+POST http://127.0.0.1:5000/api/products/add
+Content-Type: application/json
+
+{
+  "name": "samsung smart tv 45 qled 4k q65c 2023",
+  "price": 2000,
+  "description": "SmartTV Samsung 4k 65 polegadas"
+}
