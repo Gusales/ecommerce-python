@@ -26,6 +26,17 @@ def add_product():
       return jsonify({ 'message': 'Produto cadastrado com sucesso! 👌✨✨' }), 201
    return jsonify({ 'message': 'Invalid product data' }), 400
 
+@app.route('/api/products/<int:product_id>', methods=["GET"])
+def get_product_details(product_id):
+   product = Product.query.get(product_id)
+   if product:
+      return jsonify({
+         "id": product.id,
+         "name": product.name,
+         "description": product.description
+      }), 200
+   return jsonify({ "message": "Product not found." }), 404
+
 @app.route('/api/products/delete/<int:product_id>', methods=["DELETE"])
 def delete_product(product_id):
    product = Product.query.get(product_id)

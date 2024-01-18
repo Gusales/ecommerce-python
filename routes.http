@@ -7,10 +7,13 @@ POST http://127.0.0.1:5000/api/products/add
 Content-Type: application/json
 
 {
-  "name": "samsung smart tv 45 qled 4k q65c 2023",
-  "price": 2000,
-  "description": "SmartTV Samsung 4k 65 polegadas"
+  "name": "Samsung Smart TV 65`` QLED 4k q65c 2023",
+  "price": 5038.00,
+  "description": "SmartTV Samsung 4k 65``"
 }
 ###
 # @name DELETE_PRODUCT
 DELETE http://127.0.0.1:5000/api/products/delete/1
+###
+# @name GET_PRODUCT
+GET http://127.0.0.1:5000/api/products/1
