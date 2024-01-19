@@ -16,6 +16,20 @@ class Product(db.Model):
 def hello_world():
   return 'Hello World'
 
+@app.route('/api/products', methods=["GET"])
+def fetch_products():
+   products_data = Product.query.all()
+   products = []
+
+   for product in products_data:
+      item = {
+         "id": product.id,
+         "name": product.name,
+         "price": product.price,
+      }
+      products.append(item)
+   return products
+
 @app.route('/api/products/add', methods=["POST"])
 def add_product(): 
    data = request.json

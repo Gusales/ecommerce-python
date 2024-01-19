@@ -2,14 +2,22 @@
 GET http://127.0.0.1:5000/
 
 ###
+# @name FETCH_ALL_PRODUCTS
+GET http://127.0.0.1:5000/api/products
+
+###
+# @name GET_PRODUCT
+GET http://127.0.0.1:5000/api/products/1
+
+###
 # @name ADD_NEW_PRODUCT
 POST http://127.0.0.1:5000/api/products/add
 Content-Type: application/json
 
 {
   "name": "Samsung Smart TV 60`` QLED 4k q65c 2023",
-  "price": 5038.00,
-  "description": "SmartTV Samsung 4k 65``"
+  "price": 4500,
+  "description": "SmartTV Samsung 4k 60``"
 }
 
 ###
@@ -25,6 +33,3 @@ Content-Type: application/json
 ###
 # @name DELETE_PRODUCT
 DELETE http://127.0.0.1:5000/api/products/delete/1
-###
-# @name GET_PRODUCT
-GET http://127.0.0.1:5000/api/products/1
