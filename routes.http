@@ -7,6 +7,17 @@ POST http://127.0.0.1:5000/api/products/add
 Content-Type: application/json
 
 {
+  "name": "Samsung Smart TV 60`` QLED 4k q65c 2023",
+  "price": 5038.00,
+  "description": "SmartTV Samsung 4k 65``"
+}
+
+###
+# @name UPDATE_PRODUCT
+PUT  http://127.0.0.1:5000/api/products/update/1
+Content-Type: application/json
+
+{
   "name": "Samsung Smart TV 65`` QLED 4k q65c 2023",
   "price": 5038.00,
   "description": "SmartTV Samsung 4k 65``"
