@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
+from flask_login import UserMixin
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ecommerce.db'
@@ -14,8 +15,13 @@ class Product(db.Model):
     price = db.Column(db.Float, nullable=False)
     description = db.Column(db.Text, nullable=True)
 
+class User(db.Model, UserMixin):
+   id = db.Column(db.Integer, primary_key=True)
+   username = db.Column(db.String(80), nullable=False, unique=True)
+   password = db.Column(db.String(80), nullable=True)
 
-@app.route('/')
+
+@app.route('/', methods=["POST"])
 def hello_world():
   return 'Hello World'
 
