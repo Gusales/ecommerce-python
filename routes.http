@@ -12,6 +12,10 @@ Content-Type: application/json
 }
 
 ###
+# @name LOGOUT
+POST http://127.0.0.1:5000/logout
+Set-Cookie: session=.eJzt1E1qxDAMBeCrGK1DsSP_5hTdl2GwLWkSSDtDnFkNc_caeoeuvBJC74O30guusue2coPl6wXq7AO-ubV8Y5jgc-fcWO33m9p-1HlXudZ-VOe6NfXomQ-4vKfhhhtuuOH-1V2m_rwPbiss5_Hkvm0EC4gTtEIJHfnZeWTRGLSxNgXNlCNlxjkWzzLXSizCbA3VTNaWTDWxFBPRiUFGF1LSsXCKNAsiF0HxqYQaUGI1IcVURdcagnfsNVmcpde_Phsff20MvH8BzwsYXA.Zbu9cw._9HZ0u4A6Qdd3L7jsZuBzRrOR2w; HttpOnly; Path=/
+###
 # @name FETCH_ALL_PRODUCTS
 GET http://127.0.0.1:5000/api/products
 
@@ -23,7 +27,6 @@ GET http://127.0.0.1:5000/api/products/1
 # @name ADD_NEW_PRODUCT
 POST http://127.0.0.1:5000/api/products/add
 Content-Type: application/json
-Set-Cookie: session=.eJwlzkEOwjAMBMC_5MwhiZM47mdQY-8Kri09If4OEvOCeac7D5yPtL2OC7d0f0baEjulMUx6jNqHgFk0l9ZMM2KfsUPqXAOs7gESaCV8j9bWHm7gKlM6i0C6muW5YDMqRbAoHLbUVTi9qE1zZnfV0TFyNKlMv8h14vhvSvp8AVQ2MO8.ZbuyRA.w2Xd9K4PEyhXRHtvSaIdaGAQRi4; HttpOnly; Path=/
 
 
 {
