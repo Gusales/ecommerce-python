@@ -2,6 +2,16 @@
 GET http://127.0.0.1:5000/
 
 ###
+# @name LOGIN
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+  "username": "Gusales",
+  "password": "123456"
+}
+
+###
 # @name FETCH_ALL_PRODUCTS
 GET http://127.0.0.1:5000/api/products
 
@@ -33,3 +43,13 @@ Content-Type: application/json
 ###
 # @name DELETE_PRODUCT
 DELETE http://127.0.0.1:5000/api/products/delete/1
+
+###
+# @name LOGIN
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+  "username": "Gusales",
+  "password": "123456"
+}
