@@ -23,11 +23,13 @@ GET http://127.0.0.1:5000/api/products/1
 # @name ADD_NEW_PRODUCT
 POST http://127.0.0.1:5000/api/products/add
 Content-Type: application/json
+Set-Cookie: session=.eJwlzkEOwjAMBMC_5MwhiZM47mdQY-8Kri09If4OEvOCeac7D5yPtL2OC7d0f0baEjulMUx6jNqHgFk0l9ZMM2KfsUPqXAOs7gESaCV8j9bWHm7gKlM6i0C6muW5YDMqRbAoHLbUVTi9qE1zZnfV0TFyNKlMv8h14vhvSvp8AVQ2MO8.ZbuyRA.w2Xd9K4PEyhXRHtvSaIdaGAQRi4; HttpOnly; Path=/
+
 
 {
-  "name": "Samsung Smart TV 60`` QLED 4k q65c 2023",
+  "name": "Samsung Smart TV 70`` QLED 4k q65c 2023",
   "price": 4500,
-  "description": "SmartTV Samsung 4k 60``"
+  "description": "SmartTV Samsung 4k 70``"
 }
 
 ###
